@@ -1,0 +1,22 @@
+<div class="page-header">
+  <h3>Name #<%= @name.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/names" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/names/<%= @name.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_name/<%= @name.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>
