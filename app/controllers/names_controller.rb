@@ -1,6 +1,6 @@
 class NamesController < ApplicationController
   def index
-    @names = Name.all
+    @names = Name.page(params[:page])
   end
 
   def show
